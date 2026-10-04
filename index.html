@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Image Gallery</h1>
+        <p>Drag an image to preview it</p>
+      </header>
+
+      <div class="gallery">
+        <div class="thumbnails">
+          <img src="images/img1.jpg" draggable="true" alt="Image 1" />
+          <img src="images/img2.jpg" draggable="true" alt="Image 2" />
+          <img src="images/img3.jpg" draggable="true" alt="Image 3" />
+          <img src="images/img4.jpg" draggable="true" alt="Image 4" />
+          <img src="images/img5.jpg" draggable="true" alt="Image 5" />
+        </div>
+
+        <div class="display-box">
+          <img id="display" src="images/img1.jpg" alt="Selected image" />
+        </div>
+      </div>
+
+      <div class="instruction">
+        <span>↔</span>
+        Drag any thumbnail to change the main image
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
